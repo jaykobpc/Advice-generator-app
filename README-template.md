@@ -100,7 +100,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 ## Author
 
 - Frontend Mentor - [@jaykobpc](https://www.frontendmentor.io/profile/jaykobpc)
-- Twitter - [@jaykobpc](https://www.twitter.com/jaykobpc)
+- Twitter - [@jaykobpc](https://www.twitter.com/jaykob_w)
 
 **Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 

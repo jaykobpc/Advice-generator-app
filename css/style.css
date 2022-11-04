@@ -49,6 +49,7 @@ main {
     background-color: var(--Dark-Blue);
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     padding: 10px 15px;
 }
@@ -142,6 +143,8 @@ main {
 .attribution {
     font-size: 11px;
     text-align: center;
+    padding-top: 40px;
+    color: var(--Neon-Green);
 }
 
 .attribution a {
