@@ -1,0 +1,149 @@
+:root {
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+    --Quote-font-size: 28px;
+    --font-weight: 800;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+}
+
+main {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    overflow: hidden;
+    background-color: var(--Dark-Blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.card {
+    width: 600px;
+    background-color: var(--Dark-Grayish-Blue);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 40px;
+    position: relative;
+}
+
+.card__header {
+    padding: 10px 0;
+}
+
+.card__header__title {
+    color: var(--Neon-Green);
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 5px;
+}
+
+.card__content {
+    color: var(--Light-Cyan);
+    text-align: center;
+    padding: 20px 0;
+    flex: 1;
+}
+
+.card__content__text {
+    font-size: var(--Quote-font-size);
+    font-weight: var(--font-weight);
+}
+
+.card__image {
+    padding: 20px 0;
+}
+
+.card__footer {
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.card__footer__btn {
+    background-color: var(--Neon-Green);
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 45%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card__footer__btn:hover {
+    box-shadow: 0px 2px 20px 1px var(--Neon-Green);
+}
+
+.loading__spinner {
+    animation: 1.3s linear infinite spinner;
+    animation-play-state: inherit;
+    will-change: transform;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 100%;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
